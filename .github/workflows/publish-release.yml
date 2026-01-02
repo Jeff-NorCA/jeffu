@@ -3,6 +3,11 @@
 # Defaults supplied for tag v1.0.4 and the commit you provided.
 name: Publish Release for Kodi
 
+# Grant the workflow token the repository permissions needed to create releases and upload assets.
+permissions:
+  contents: write
+  packages: write
+
 on:
   workflow_dispatch:
     inputs:
